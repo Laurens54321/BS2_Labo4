@@ -25,6 +25,17 @@ services:
       ansible_lab:
         ipv4_address: 172.16.23.13
 
+  host5:
+    image: tiebevn/openssh_server
+    networks:
+      ansible_lab:
+        ipv4_address: 172.16.23.14
+
+  host6:
+    image: tiebevn/openssh_server
+    networks:
+      ansible_lab:
+        ipv4_address: 172.16.23.15
 
 
 networks:

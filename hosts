@@ -1,9 +1,15 @@
-172.16.23.10
-172.16.23.11
-172.16.23.12
-172.16.23.13
-
-[all:vars]
-ansible_connection=ssh
-ansible_user=root
-ansible_pass=kroepoek
+all:
+  children:
+    webservers:
+      hosts:
+        172.16.23.10:
+        172.16.23.11:
+  hosts:
+    172.16.23.12:
+    172.16.23.13:
+    172.16.23.14:
+    172.16.23.15:
+  vars:
+    ansible_connection: ssh
+    ansible_user: root
+    ansible_pass: kroepoek
