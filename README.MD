@@ -4,6 +4,8 @@
 
 ### Ansible, wadisda?
 
+[Wie nog eens een visuele opfrisser wilt](https://www.ansible.com/resources/videos/quick-start-video)
+
 Een van de grootste oorzaken van fouten in IT-infrastructuur is herhaling. Wanneer iemand een taak 1 keer moet doen, zal die persoon een stuk oplettender zijn dan wanneer hij/zij deze taak 100 keer moet doen. In IT zijn kleine foutjes snel gemaakt, al is het maar een typfout, en toch kunnen deze soms desastreuze gevolgen hebben. 
 
 Ansible is een zeer krachtige tool gebruikt voor automatisatie van beheertaken. Het doel is zoveel mogelijk manuele taken te gaan automatiseren. Het idee is dat iedere taak die je normaal manueel zelf in een command line uitvoert, codeert in Ansible, en dat Ansible deze voor ons gaat uitvoeren. Deze taak testen we natuurlijk voordat we het op production loslaten, maar zo zijn we zeker dat er veel minder human errors in onze infrastructuur sluipen, en dat als we deze taak op andere servers moeten uitvoeren, de aanpak precies dezelfde is.
