@@ -183,6 +183,17 @@ We kunnen ook dynamisch variabelen registreren. In dit voorbeeld vragen we de in
       when: cmd_result.stdout.find('hi') != -1
 ```
 
+#### Oefening 1
+Maak een playbook waarin je met een loop de volgende bestanden aanmaakt:
+* passwords.txt
+* schattigekatjes.jpg
+* cosci_prices.xlsx
+
+Al deze files zijn eigendom van de user en group root, met de rechten 660.
+
+#### Oefening 2
+Controleer hoeveel bestanden er in /root staan. Als er meer dan 5 bestanden staan, maak je de map volledig leeg.
+
 ### Ansible facts
 
 Naast al die variabelen houdt Ansible ook een heleboel eigen variabelen bij: [Ansible facts](https://docs.ansible.com/ansible/latest/user_guide/playbooks_vars_facts.html#vars-and-facts).
