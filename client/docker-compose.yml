@@ -1,0 +1,35 @@
+version: '3.3'
+
+services:
+  host1:
+    image: tiebevn/openssh_server
+    networks:
+      ansible_lab:
+        ipv4_address: 172.16.23.10
+
+  host2:
+    image: tiebevn/openssh_server
+    networks:
+      ansible_lab:
+        ipv4_address: 172.16.23.11
+
+  host3:
+    image: tiebevn/openssh_server
+    networks:
+      ansible_lab:
+        ipv4_address: 172.16.23.12
+
+  host4:
+    image: tiebevn/openssh_server
+    networks:
+      ansible_lab:
+        ipv4_address: 172.16.23.13
+
+
+
+networks:
+  ansible_lab:
+    driver: bridge
+    ipam:
+     config:
+       - subnet: 172.16.23.0/24
