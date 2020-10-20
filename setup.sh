@@ -1,10 +1,9 @@
-if [ ! -f /root/id_rsa ]; then
-    ssh-keygen -t rsa -q -f "$HOME/.ssh/id.rsa" -N ""
+if [ ! -f $HOME/.ssh/id_rsa ]; then
+    ssh-keygen -t rsa -q -f "$HOME/.ssh/id_rsa" -N "" 
 fi
 
-echo "" > /root/.ssh/known_hosts
+echo "" > $HOME/.ssh/known_hosts
 docker-compose -f client/docker-compose.yml up -d
-apt install sshpass
 sshpass -p "kroepoek" ssh-copy-id -o StrictHostKeyChecking=no root@172.16.23.10
 sshpass -p "kroepoek" ssh-copy-id -o StrictHostKeyChecking=no root@172.16.23.11
 sshpass -p "kroepoek" ssh-copy-id -o StrictHostKeyChecking=no root@172.16.23.12
