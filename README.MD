@@ -12,21 +12,21 @@ Ansible is een zeer krachtige tool gebruikt voor automatisatie van beheertaken. 
 
 ### Installatie ansible
 
-Als eerste stap zal je uiteraard ansible moeten installeren. Dit is ook weer zeer eenvoudig, je installeert simpelweg het pakket 'ansible' van je packet manager.
+Als eerste stap zal je uiteraard ansible moeten installeren. Dit is ook weer zeer eenvoudig, je installeert simpelweg het pakket 'ansible' van je packet manager. Terwijl je hiermee bezig bent, installeer je best ook direct sshpass, een pakket dat nodig is om het script uit te voeren.
 
 ```bash
 # Ubuntu/Debian/...
 
-sudo apt install ansible -y
+sudo apt install ansible sshpass -y
 
 # CentOS/Fedora/...
 
-sudo yum install ansible -y
+sudo yum install ansible sshpass -y
 ```
 
 ## Verkenning van de labo-omgeving
 
-Voor de oefeningen maken we gebruik van een labomgeving in Docker. Deze is gelukkig voor jullie al voorbereid, en moet je enkel nog binnenhalen van https://github.com/Tiebevn/BS2_Labo4. In deze repository vind je een bestand 'setup.sh'. Dit voer je uit (`sudo ./setup.sh`).
+Voor de oefeningen maken we gebruik van een labomgeving in Docker. Deze is gelukkig voor jullie al voorbereid, en moet je enkel nog binnenhalen van https://github.com/Tiebevn/BS2_Labo4. In deze repository vind je een bestand 'setup.sh'. Dit voer je uit (`./setup.sh`).
 
 ![Lab Directory](images/labdir.png)
 
