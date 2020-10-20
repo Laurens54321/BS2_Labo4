@@ -1,3 +1,7 @@
+if [ ! -f /root/id_rsa ]; then
+    ssh-keygen -t rsa -q -f "$HOME/.ssh/id.rsa" -N ""
+fi
+
 echo "" > /root/.ssh/known_hosts
 docker-compose -f client/docker-compose.yml up -d
 apt install sshpass
